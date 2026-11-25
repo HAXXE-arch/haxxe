@@ -1,0 +1,6 @@
+{
+  "name": "InvesGas",
+  "description": "Portal edukasi investasi dan simulasi finansial digital: modul pembelajaran terstruktur, katalog instrumen aset, sejarah pasar, kalkulator compound interest, kuis profil risiko, dan manajemen materi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

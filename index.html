@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InvesGas — Portal Edukasi Investasi &amp; Simulasi Finansial</title>
+    <meta
+      name="description"
+      content="Portal edukasi investasi dan simulasi finansial digital: modul pembelajaran terstruktur, katalog instrumen aset, sejarah pasar, kalkulator compound interest, kuis profil risiko, dan manajemen materi."
+    />
+    <meta property="og:title" content="InvesGas — Portal Edukasi Investasi &amp; Simulasi Finansial" />
+    <meta
+      property="og:description"
+      content="Pelajari instrumen investasi, kelola risiko, dan simulasikan pertumbuhan portofolio secara terukur dari dasar."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..600&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="#main-workspace" class="skip-link">Langsung ke konten utama</a>
+
+    <!-- 3-Zone Top Bar Contract -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#edukasi" class="brand-mark" data-route="edukasi" aria-label="InvesGas Beranda">
+          <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 18V12M10 18V8M16 18V10M21 5l-5.5 5.5-4-4L4 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Inves<strong>Gas</strong></span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Navigasi Utama">
+          <button type="button" class="nav-link is-active" data-nav="edukasi">Edukasi</button>
+          <button type="button" class="nav-link" data-nav="aset">Aset</button>
+          <button type="button" class="nav-link" data-nav="simulasi">Simulasi</button>
+          <button type="button" class="nav-link" data-nav="kuis">Profil Risiko</button>
+          <button type="button" class="nav-link" data-nav="admin" hidden>Dashboard Admin</button>
+        </nav>
+
+        <div class="header-actions">
+          <div id="auth-action-slot"></div>
+          <button
+            type="button"
+            class="mobile-menu-toggle"
+            id="mobile-menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            aria-label="Buka menu navigasi"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="17" x2="20" y2="17" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav-drawer" id="mobile-nav-drawer" hidden>
+        <button type="button" class="mobile-nav-link is-active" data-nav="edukasi">Edukasi &amp; Sejarah</button>
+        <button type="button" class="mobile-nav-link" data-nav="aset">Aset Investasi</button>
+        <button type="button" class="mobile-nav-link" data-nav="simulasi">Simulasi Compound</button>
+        <button type="button" class="mobile-nav-link" data-nav="kuis">Kuis Profil Risiko</button>
+        <button type="button" class="mobile-nav-link" data-nav="admin" hidden>Dashboard Admin</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <img
+        src="/src/assets/images/hero_wealth_portal_1795589923236.jpg"
+        alt="Arsitektur distrik finansial modern saat senja"
+        class="hero-bg-img"
+        referrerpolicy="no-referrer"
+      />
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-kicker">Portal Literasi Keuangan &amp; Simulasi Portofolio</p>
+        <h1 id="hero-heading" class="hero-title">
+          Pahami Instrumen Investasi &amp; Kelola Risiko Secara Terukur
+        </h1>
+        <p class="hero-subtitle">
+          Pelajari dasar pasar modal, evaluasi karakteristik aset, kenali toleransi risiko pribadi,
+          dan proyeksikan pertumbuhan dana melalui simulasi bunga berbunga.
+        </p>
+        <div class="hero-cta-row">
+          <button type="button" class="btn btn-primary" id="hero-start-sim">
+            Jalankan Simulasi
+          </button>
+          <button type="button" class="btn btn-ghost-light" id="hero-start-quiz">
+            Cek Profil Risiko
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Workspace -->
+    <main id="main-workspace" class="workspace-shell">
+      <div class="disclaimer-strip" role="note" aria-label="Disclaimer Edukasi">
+        <strong>Catatan Edukasi:</strong> Seluruh materi pembelajaran, proyeksi simulasi, dan
+        pemetaan risiko pada portal ini ditujukan murni untuk literasi keuangan dan bukan merupakan
+        nasihat investasi dari penasihat keuangan berlisensi.
+      </div>
+
+      <div id="view-container"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 InvesGas. Portal Edukasi Investasi &amp; Literasi Finansial Digital.</p>
+        <div class="footer-links">
+          <button type="button" class="footer-link-btn" data-nav="edukasi">Modul</button>
+          <button type="button" class="footer-link-btn" data-nav="aset">Aset</button>
+          <button type="button" class="footer-link-btn" data-nav="simulasi">Simulasi</button>
+          <button type="button" class="footer-link-btn" data-nav="kuis">Profil Risiko</button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal & Toast Roots -->
+    <div id="modal-root"></div>
+    <div id="toast-root" class="toast-stack" aria-live="polite" aria-atomic="true"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
